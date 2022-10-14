@@ -1,3 +1,0 @@
-# SheCodes
-
-Proyectos de SheCodes
