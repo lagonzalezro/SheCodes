@@ -95,7 +95,7 @@
             alert("Invalid hour");
           }
         }
-      }*/
+      }
 
       let country = prompt("What country are you from?");
       let validCountry = country.toLowerCase();
@@ -103,7 +103,18 @@
         alert("You speak Portuguese");
       } else {
         alert("You don't speak Portuguese");
+      }*/
+
+      function canSpeakPortuguese() {
+        let country = prompt("What country are you from?");
+        country = country.toLowerCase();
+        if (country === "brazil" || country === "portugal") {
+          alert("You speak Portuguese");
+        } else {
+          alert("Go learn Portuguese!");
+        }
       }
+      canSpeakPortuguese();
     </script>
   </body>
 </html>
