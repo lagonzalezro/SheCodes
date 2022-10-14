@@ -72,13 +72,27 @@
       alert(hometown);
       let firstName = prompt("What is your first name?");
       let lastName = prompt("What is your last name?");
-      alert(firstName + " " + lastName);*/
+      alert(firstName + " " + lastName);
+
       let age = prompt("What's your age?");
       if (age < 18) {
         alert("You cannot apply");
       }
       if (age >= 18) {
         alert("You can apply to SheCodes");
+      }*/
+
+      let hour = prompt("What is the current hour?");
+      if (hour < 12) {
+        alert("Good morning");
+      } else {
+        if (hour > 18 && hour <= 24) {
+          alert("Good evening");
+        } else {
+          if (hour >= 12 && hour <= 18) {
+            alert("Good afternoon");
+          }
+        }
       }
     </script>
   </body>
