@@ -130,9 +130,9 @@
         let name = prompt("What is your first name?");
 
         if (canApply()) {
-          newheading("Hi ${name}! Welcome to SheCodes!");
+          updateheading("Hi " + name + "! Welcome to SheCodes!");
         } else {
-          newheading("Sorry ${name}! You cannot join SheCodes!");
+          updateheading("Sorry " + name + "! You cannot join SheCodes!");
         }
       }
 
