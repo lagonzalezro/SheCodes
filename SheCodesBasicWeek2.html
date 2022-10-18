@@ -103,7 +103,7 @@
         alert("You speak Portuguese");
       } else {
         alert("You don't speak Portuguese");
-      }*/
+      }
 
       function canSpeakPortuguese() {
         let country = prompt("What country are you from?");
@@ -114,7 +114,23 @@
           alert("Go learn Portuguese!");
         }
       }
-      canSpeakPortuguese();
+      canSpeakPortuguese();*/
+
+      function aplly() {
+        let name = prompt("What is your first name?");
+        let age = prompt("What is your age?");
+
+        if (age >= 18) {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "Hi " + name + "! Welcome to SheCodes!";
+        } else {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "Sorry " + name + "! You cannot join SheCodes!";
+        }
+      }
+
+      let applynowbutton = document.querySelector("button");
+      applynowbutton.addEventListener("click", aplly);
     </script>
   </body>
 </html>
