@@ -116,15 +116,23 @@
       }
       canSpeakPortuguese();*/
 
+      function updateheading(newheading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newheading;
+      }
+
+      function canApply() {
+        let age = prompt("How old are you?");
+        return age >= 18;
+      }
+
       function aplly() {
         let name = prompt("What is your first name?");
-        let age = prompt("How old are you?");
 
-        let heading = document.querySelector("h1");
-        if (age >= 18) {
-          heading.innerHTML = "Hi " + name + "! Welcome to SheCodes!";
+        if (canApply()) {
+          newheading("Hi ${name}! Welcome to SheCodes!");
         } else {
-          heading.innerHTML = "Sorry " + name + "! You cannot join SheCodes!";
+          newheading("Sorry ${name}! You cannot join SheCodes!");
         }
       }
 
