@@ -118,14 +118,13 @@
 
       function aplly() {
         let name = prompt("What is your first name?");
-        let age = prompt("What is your age?");
+        let age = prompt("How old are you?");
 
+        let heading = document.querySelector("h1");
         if (age >= 18) {
-          let h1 = document.querySelector("h1");
-          h1.innerHTML = "Hi " + name + "! Welcome to SheCodes!";
+          heading.innerHTML = "Hi " + name + "! Welcome to SheCodes!";
         } else {
-          let h1 = document.querySelector("h1");
-          h1.innerHTML = "Sorry " + name + "! You cannot join SheCodes!";
+          heading.innerHTML = "Sorry " + name + "! You cannot join SheCodes!";
         }
       }
 
